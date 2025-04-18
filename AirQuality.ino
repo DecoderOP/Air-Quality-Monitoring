@@ -9,16 +9,17 @@
 #include "DHT.h"
 
 // WiFi credentials
-const char* ssid = "tmkc";
-const char* password = "45@0d85Q";
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 // Telegram Bot
-#define BOTtoken "7941287963:AAEvuO-Er0zK_f81CmT01fA1XzmTZnygIBY"
-#define CHAT_ID "1893353591"
+#define BOTtoken "YOUR_TELEGRAM_BOT_TOKEN"
+#define CHAT_ID "YOUR_TELEGRAM_CHAT_ID"
 
 // ThingSpeak
-String apiKey = "ZGD5J5F2KB29L4J5";
+String apiKey = "YOUR_THINGSPEAK_API_KEY";
 const char* server = "api.thingspeak.com";
+
 
 // Sensor Setup
 #define DHTPIN D2
@@ -34,6 +35,8 @@ UniversalTelegramBot bot(BOTtoken, telegramClient);
 char auth[] = BLYNK_AUTH_TOKEN;
 
 // Thresholds
+// Update Theresholds as per your needs
+
 float tempThreshold = 28.0;
 float humidThreshold = 75.0;
 int airQualityThreshold = 100;
